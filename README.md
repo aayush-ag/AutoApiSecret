@@ -1,157 +1,135 @@
-# AutoApiSecret-加密版
-AutoApi系列：AutoApi、AutoApiSecret、AutoApiSR、AutoApiS
+AutoApi series: AutoApi, AutoApiSecret, AutoApiSR, AutoApiS
 
-# 置顶 #
-* 本项目是建立在[原教程](https://blog.432100.xyz/index.php/archives/50/)可以正确调用api的**假设**上的，核心是paran/黑幕大佬的py脚本。
-* 本项目只是提供一个自动、免费、无需额外设备的脚本运行方式，换句话说，**借用github的电脑/服务器来干活**。（因为原教程需要服务器/超长时间运转的设备，大部分人都不具备，本项目应运而生）
-* 本项目运行依赖**github action**服务，此功能github固有而**非私人提供**的服务器，且整个运行过程只涉及你与github。
-* 请务必先阅读理解[原教程](https://blog.432100.xyz/index.php/archives/50/)的**原理说明、设计理念**。
-* **不保证一定能续期！不保证一定能续期！不保证一定能续期**！或者说，**只是增大续订可能性**。过期前、后30天都可能续期！！！
-* 若理解并接受上述说明，请接着操作；**若否，请点击浏览器右上角 X 。**
+Top
+This project is based on the assumption that the original tutorial can call the api correctly , and the core is the py script of paran/shadow.
+This project just provides an automatic, free, and no additional equipment-free script running method, in other words, borrow a github computer/server to work . (Because the original tutorial requires a server/extra-long running equipment, most people do not have it, this project came into being)
+The project is running relies github action service, this feature github inherent and non-private provision server, and the entire operation involves only you and github.
+Please be sure to read and understand the principle description and design concept of the original tutorial .
+Renewal is not guaranteed! Renewal is not guaranteed! Renewal is not guaranteed ! In other words, it just increases the possibility of renewal . Renewal is possible within 30 days before and after the expiration! ! !
+If you understand and accept the above instructions, please proceed; if not, please click the X in the upper right corner of the browser.
+project instruction
+Use github action to automatically call API regularly and keep E5 development active.
+It's free, no additional equipment/server is needed, and you don't need to worry about it after deployment.
+Encrypted version, hide application id + secret, protect account security.
+Special instructions/Thanks
+Original tutorial blogger-shadow (kuan id-Paran): https://blog.432100.xyz/index.php/archives/50/
+Normal version address: https://github.com/wangziyingwen/AutoApi
+Encrypted version address (recommended): https://github.com/wangziyingwen/AutoApiSecret
+Imitate the human application development version (including upgrade steps): https://github.com/wangziyingwen/AutoApiSR
+Super version address: https://github.com/wangziyingwen/AutoApiS
+Common errors and solutions/update log : https://github.com/wangziyingwen/Autoapi-test
+Get the refresh_token widget from the web page (not recommended): https://github.com/wangziyingwen/GetAutoApiToken
+Video tutorial: (I operate very slowly, double speed/fast forward by myself)
+Online/download address: https://kino-onemanager.herokuapp.com/Video/AutoApi%E6%95%99%E7%A8%8B.mp4?preview
+Station B: https://www.bilibili.com/video/av95688306/
+the difference
+Normal version (deprecated) : the key is exposed, you can use it if you don’t care
 
-### 项目说明 ###
-* 利用github action实现**定时自动调用api**，保持E5开发活跃。
-* **免费，不需要额外设备/服务器**，部署完不用管啦。
-* 加密版，隐藏应用id+机密，保护账号安全。
+Encrypted version (recommended) : Apply id secret encryption to hide, improve security
 
-### 特别说明/Thanks ###
-* 原教程博主-黑幕（酷安id-Paran）：https://blog.432100.xyz/index.php/archives/50/
-* 普通版地址：https://github.com/wangziyingwen/AutoApi
-* 加密版地址（推荐）：https://github.com/wangziyingwen/AutoApiSecret
-* 模仿人为应用开发版（包含升级步骤）：https://github.com/wangziyingwen/AutoApiSR
-* 超级版地址： https://github.com/wangziyingwen/AutoApiS
-* **常见错误及解决办法/更新日志**：https://github.com/wangziyingwen/Autoapi-test
-* 网页获取refresh_token小工具（不建议使用）：https://github.com/wangziyingwen/GetAutoApiToken
-* 视频教程：（我操作很慢，自行倍速/快进）
-   * 在线/下载地址：https://kino-onemanager.herokuapp.com/Video/AutoApi%E6%95%99%E7%A8%8B.mp4?preview
-   * B站：https://www.bilibili.com/video/av95688306/
+Imitate the artificial application development version (semi-abandoned) : As the name implies, an upgraded version of the encrypted version. Since the Super Edition is compatible with the analog version, this version is in an awkward position. (Of course it can be used normally)
 
-           
+Super version (not recommended) : Further upgrade version, adding custom parameters and modes. According to the current situation, Microsoft's renewal requirements are very low, and this item is not required for the time being.
 
-### 区别 ###
-   [普通版（弃用）](https://github.com/wangziyingwen/AutoApi)：密钥暴露，不在乎的话可以使用
-   
-   [加密版（推荐）](https://github.com/wangziyingwen/AutoApiSecret)：应用id机密加密隐藏，提高安全性
+The above recommendations/non-recommendations are just personal opinions, please choose the version by yourself, and you can use it at the same time .
 
-   [模仿人为应用开发版（半弃用）](https://github.com/wangziyingwen/AutoApiSR)：顾名思义，加密版的升级版。由于超级版兼容模拟版的功能，此版本处于一种尴尬位置。（当然也可以正常使用）
-   
-   [超级版（不建议）](https://github.com/wangziyingwen/AutoApiS)：进一步升级版，增加自定义参数、模式。按目前情况，微软续订要求很低，暂时不需要使用此项目。
-   
-   **以上推荐/不建议等只是个人意见，请自行选择版本，可同时使用**。
+step
+😊 😊 😊 😊 😊 😊
 
---------------------------------------------------------------
+Please note! Please note! Please note!
 
-## 步骤 ##  
+***If there are errors/problems, please see : common errors and solutions/update log
 
-   >:blush: :blush: :blush: :blush: :blush: :blush: 
-   
-   >请注意！请注意！请注意！
-   
-   >*** **有错误/问题请看**:    [常见错误及解决办法/更新日志](https://github.com/wangziyingwen/Autoapi-test)
-   
-   >*** 原教程/博客好像也坏了，看[视频教程](https://www.bilibili.com/video/av95688306/)吧，懒得补充，ORZ. （或者去网上搜一下，有一堆转载，关键词：github action e5 续期）
-   
-   >*** 注册应用时用到的[azure管理页面](https://portal.azure.com/)，或者直接到[仪表板](https://aad.portal.azure.com/)，找到注册应用选项
-   
-   >***【重定向URI】填写的内容：http://localhost:53682/
+*** The original tutorial/blog seems to be broken, watch the video tutorial , too lazy to add, ORZ. (Or go online to search, there are a bunch of reprints, keyword: github action e5 renewal)
 
-   >*** rclone下载，请自行百度谷歌，官网好像是[rclone.org](https://rclone.org)
-   
-   >:anguished: :anguished: :anguished: :anguished: :anguished: :anguished:  
-  
-* 第一步，先大致浏览[原教程](https://blog.432100.xyz/index.php/archives/50/)，了解如何获取应用id、机密、refresh_token 3样东西，以方便接下来的操作。
+*** The azure management page used when registering the app , or directly to the dashboard to find the registration app option
 
-* 第二步，登陆/新建github账号，回到本项目页面，点击右上角fork本项目的代码到你自己的账号，然后你账号下会出现一个一模一样的项目，接下来的操作均在你的这个项目下进行。（看不到图片/图裂请科学上网）
+***[Redirect URI] Fill in the content: http://localhost:53682/
 
-  ![image](https://github.com/wangziyingwen/ImageHosting/blob/master/AutoApi/fork.png)
-  
-* 根据[原教程](https://blog.432100.xyz/index.php/archives/50/)获取应用id、机密、refresh_token（自己复制保存，注意区分id机密，别弄混了）
-   
-  然后在线编辑你项目里的1.txt，将整个refresh_token覆盖粘贴进去（里面是我的数据，先删掉或者覆盖掉）。（千万不要改1.py）
-  
-    > refresh_token位置如图下。复制refresh_token紧接着的双引号里的内容（红竖线框起来的），不要把双引号复制进去。复制进1.txt后，留意结尾不要留空格或者空行
-     
-    ![image](https://github.com/wangziyingwen/ImageHosting/blob/master/AutoApi/token地方.png)
-  
-* 第三步，依次点击上栏Setting > Secrets > Add a new secret，新建两个secret如图：CONFIG_ID、CONFIG_KEY。
+*** To download rclone, please Baidu and Google by yourself , the official website seems to be rclone.org
 
-  内容分别如下: ( 把你的应用id改成你的应用id , 你的应用机密改成你的机密，单引号不要动 )
-  
-  CONFIG_ID
-  ```shell
-  id=r'你的应用id'
-  ```
-  CONFIG_KEY
-  ```shell
-  secret=r'你的应用机密'
-  ```
-  ![image](https://github.com/wangziyingwen/ImageHosting/blob/master/AutoApi/机密.png)
-  
-  最终格式应该是类似这样的：
-  
-  ![image](https://github.com/wangziyingwen/ImageHosting/blob/master/AutoApi/格式.png)
-  
-* 第四步，进入你的个人设置页面(右上角头像 Settings，不是仓库里的 Settings)，选择 Developer settings > Personal access tokens > Generate new token,
+😧 😧 😧 😧 😧 😧
 
-  ![image](https://github.com/wangziyingwen/ImageHosting/blob/master/AutoApi/Settings.png)
-  ![image](https://github.com/wangziyingwen/ImageHosting/blob/master/AutoApi/token.png)
+The first step is to browse the original tutorial to learn how to get the application id, secret, and refresh_token to facilitate the next operation.
 
-  设置名字为GITHUB_TOKEN , 然后勾选 repo , admin:repo_hook , workflow 等选项，最后点击Generate token即可。
-  
-  ![image](https://github.com/wangziyingwen/ImageHosting/blob/master/AutoApi/repo.png)
-  ![image](https://github.com/wangziyingwen/ImageHosting/blob/master/AutoApi/adminrepo.png)
-  ![image](https://github.com/wangziyingwen/ImageHosting/blob/master/AutoApi/workflow.png)
-  
-* 第五步，点击右上角星星/star立马调用一次，再点击上面的Action就能看到每次的运行日志，看看运行状况
+The second step is to log in/create a new github account, go back to the project page, click on the fork of the project code in the upper right corner to your own account, and then an identical project will appear under your account, and the next operations are in yours Under the project. (If you can't see the picture/picture crack, please go online scientifically)
 
-（必需点进去Test Api看下，api有没有调用到位，有没有出错。外面的Auto Api打勾只能说明运行是正常的，我们还需要确认10个api调用成功了，就像图里的一样。如果少了几个api，要么是注册应用的时候赋予api权限没弄好；要么是没登录激活onedrive，登录激活一下）
+image
 
-  ![image](https://github.com/wangziyingwen/ImageHosting/blob/master/AutoApi/日志.png)
+Obtain the application id, secret, and refresh_token according to the original tutorial (copy and save by yourself, pay attention to distinguish the id secret, don’t confuse it)
 
-* 第六步，没出错的话，就搞定啦！！再看看下面的定时次数要不要修改，不打算改就忽略。
+Then edit 1.txt in your project online, and paste the entire refresh_token into it (there is my data, delete or overwrite it first). (Do not change 1.py)
 
-  **然后第二天回来确认下是否自动运行了（ation里是否多出来几个）**,是的话就不用管了，完结。
-  
-  我设定的每6小时自动运行一次，每次调用3轮（点击右上角星星/star也可以立马调用一次），你们自行斟酌修改（我也不知道保持活跃要调用多少次、多久）：
+The location of refresh_token is shown below. Copy the content in the double quotes immediately following refresh_token (framed by the red vertical line), don't copy the double quotes into it. After copying into 1.txt, be careful not to leave spaces or blank lines at the end
 
-  * 定时自动启动修改地方：（在.github/workflow/AutoApiSecret.yml文件里，自行百度cron定时任务格式，最短每5分钟一次）
-   
-  ![image](https://github.com/wangziyingwen/ImageHosting/blob/master/AutoApi/定时.png)
-   
-  * 每次轮数修改地方：（在1.py最后面）
-   
-  ![image](https://github.com/wangziyingwen/ImageHosting/blob/master/AutoApi/次数.png)
-  
-------------------------------------------------------------
-### 题外话 ###
-> Api调用
-  你们可以自己去graph浏览器看一下，学着自己修改要调用什么api(最重要的是调用outlook、onedrive)
-  https://developer.microsoft.com/zh-CN/graph/graph-explorer/preview
+image
 
-### GithubAction介绍 ###
-提供的虚拟环境：
+The third step is to click on the upper column Setting> Secrets> Add a new secret, and create two new secrets as shown in the figure: CONFIG_ID and CONFIG_KEY.
 
-· 2-core CPU
-· 7 GB RAM 内存
-· 14 GB SSD 硬盘空间
+The contents are as follows: (change your application id to your application id, and your application secret to your secret, do not move the single quotes)
 
-使用限制：
-* 每个仓库只能同时支持20个 workflow 并行。
-* 每小时可以调用1000次 GitHub API 。
-* 每个 job 最多可以执行6个小时。
-* 免费版的用户最大支持20个 job 并发执行，macOS 最大只支持5个。
-* 私有仓库每月累计使用时间为2000分钟，超过后$ 0.008/分钟，公共仓库则无限制。
+CONFIG_ID
 
-（我们这里用的公共仓库，按理，你们可以设定无限循环调用，然后6小时启动一次，保证24小时全天候调用）
+= R & lt ID ' your application ID '
+CONFIG_KEY
 
-### 最后 ###
-  教程很直白了，应该都会弄吧！
-  
-  代码小白，多包涵！有问题/修改建议可以点击上方issues发布一下，或者PY给我:
-  wz.lxh@outlook.com
-  
-  Q群：[657581700](https://jq.qq.com/?_wv=1027&k=5FQJbWmV)  （项目相关讨论）
-  
-  最后的最后，再次感谢黑幕/paran大佬
-  
-  ————wangziyingwen/酷安id-卷腿毛菌
+r = Secret ' your application confidential '
+image
+
+The final format should look like this:
+
+image
+
+The fourth step, enter your personal settings page (the upper right corner of the picture Settings, not the settings in the warehouse), select Developer settings> Personal access tokens> Generate new token,
+
+image image
+
+Set the name to GITHUB_TOKEN, then check repo, admin:repo_hook, workflow and other options, and finally click Generate token.
+
+image image image
+
+Step 5, click on the star/star in the upper right corner to call it immediately, and then click on the Action above to see the running log of each time and check the running status
+
+(You must click in Test Api to see if the api is called in place and if there is an error. The Auto Api outside can only indicate that the operation is normal. We also need to confirm that the 10 api calls are successful, just like the one in the picture. .If a few apis are missing, either the api permissions are not properly assigned when registering the application; or the onedrive is not logged in to activate onedrive, log in to activate it)
+
+image
+
+The sixth step, if there is no error, it is done! ! Then see if you want to modify the following timing times. If you don't plan to modify it, ignore it.
+
+Then come back the next day to confirm whether it is running automatically (whether there are more in the ation) , if yes, just ignore it, it's over.
+
+I set it to run automatically every 6 hours and call 3 rounds each time (click on the star/star in the upper right corner to call it immediately), you can modify it at your discretion (I don’t know how many calls and how long to keep active):
+
+Timing automatic start to modify the place: (in the .github/workflow/AutoApiSecret.yml file, self-Baidu cron timing task format, the shortest time every 5 minutes)
+image
+
+Modify the number of each round: (at the end of 1.py)
+image
+
+Digression
+Api call You can go to the graph browser to take a look, learn to modify what api to call (the most important thing is to call outlook, onedrive) https://developer.microsoft.com/zh-CN/graph/graph-explorer/ preview
+
+Introduction to GithubAction
+Provided virtual environment:
+
+· 2-core CPU · 7 GB RAM memory · 14 GB SSD hard disk space
+
+Use restrictions:
+
+Each warehouse can only support 20 concurrent workflows.
+GitHub API can be called 1000 times per hour.
+Each job can be executed for up to 6 hours.
+Users of the free version support a maximum of 20 concurrent jobs, and macOS only supports a maximum of 5.
+The monthly accumulative usage time of the private warehouse is 2000 minutes, after exceeding it is $0.008/min, and the public warehouse is unlimited.
+(The public warehouse we use here, logically, you can set up an infinite loop call, and then start it once every 6 hours to ensure 24 hours a day call)
+
+At last
+The tutorial is very straightforward, I should be able to do it!
+
+Code noob, forgive me! If you have any questions/recommendations, please click on the issues above to post, or PY to me: wz.lxh@outlook.com
+
+Q group: 657581700 (project related discussions)
+
+Finally, thank you again for shady/paran boss
+
+———— wangziyingwen/kuan id-curly hair fungus
